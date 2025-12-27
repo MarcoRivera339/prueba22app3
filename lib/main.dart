@@ -1,4 +1,4 @@
-import 'package:app_supa/screens/LeerScreen.dart';
+import 'package:app_supa/screens/WelcomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 //////////////////////////////////////////////////////////
@@ -11,7 +11,6 @@ Future<void> main() async {
   runApp(MiAplicacion());
 }
 
-// Get a reference your Supabase client
 final supabase = Supabase.instance.client;
 
 ///////////////////////////////////////////////////////////
@@ -32,8 +31,8 @@ class Cuerpo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: LeerScreen(),
+      appBar: AppBar(title: Text("Prueba 2"),),
+      body: Welcomescreen(),
     );
   }
 }
